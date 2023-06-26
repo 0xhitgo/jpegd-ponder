@@ -1,4 +1,24 @@
-type ExampleEntity @entity {
-  id: String!
-  name: String!
+type Claim @entity {
+  id: Bytes!
+  amount: BigInt!
+  user: Bytes!
+  pid: BigInt!
+  timestamp: BigInt!
 }
+
+type Withdraw @entity {
+  id: Bytes!
+  amount: BigInt!
+  user: Bytes!
+  pid: BigInt!
+  timestamp: BigInt!
+}
+
+type Deposit @entity {
+  id: Bytes!
+  amount: BigInt!
+  user: Bytes!
+  pid: BigInt!
+  timestamp: BigInt!
+}
+
